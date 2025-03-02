@@ -7,11 +7,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class DocumentApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("documents-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 500, 400);
+        FXMLLoader fxmlLoader = new FXMLLoader(DocumentApp.class.getResource("documents-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 500, 440);
+        stage.setMinHeight(440);
+        stage.setMinWidth(440);
         stage.setTitle("Documents");
         stage.setScene(scene);
         stage.show();

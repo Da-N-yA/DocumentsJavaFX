@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.documents.documents.controllers.DocumentController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="340.0" minWidth="440.0" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.documents.documents.controllers.DocumentController">
    <center>
       <ListView fx:id="documentsListView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </center>
@@ -58,6 +58,11 @@
                <VBox.margin>
                   <Insets bottom="15.0" />
                </VBox.margin>
+            </Button>
+            <Button fx:id="documentDelete" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Удалить" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
             </Button>
             <Region VBox.vgrow="ALWAYS" />
             <Button fx:id="documentExit" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" text="Выход" textAlignment="CENTER">
