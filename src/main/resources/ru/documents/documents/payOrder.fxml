@@ -1,0 +1,59 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="500.0" prefWidth="450.0" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.documents.documents.controllers.PayOrderController">
+    <padding>
+        <Insets bottom="15" left="15" right="15" top="15" />
+    </padding>
+
+    <GridPane VBox.vgrow="ALWAYS">
+        <Label text="Номер:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="numberField" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" />
+
+        <Label text="Дата:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <DatePicker fx:id="dateField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Label text="Пользователь:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="userField" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+
+        <Label text="Контрагент:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <TextField fx:id="counterpartyField" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+
+        <Label text="Сумма:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <TextField fx:id="amountField" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" />
+
+        <Label text="Валюта:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <TextField fx:id="currencyField" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" />
+
+        <Label text="Курс валюты:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <TextField fx:id="exchangeRateField" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" />
+
+        <Label text="Комиссия:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+        <TextField fx:id="commissionField" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" />
+
+        <columnConstraints>
+            <ColumnConstraints maxWidth="87.0" minWidth="84.0" prefWidth="87.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="219.0" prefWidth="219.0" />
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+    </GridPane>
+
+    <Button fx:id="createButton" maxWidth="Infinity" text="Создать" VBox.vgrow="NEVER" />
+</VBox>
